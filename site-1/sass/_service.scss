@@ -1,0 +1,68 @@
+.service {
+    width: 61%;
+    margin: 0 auto;
+    min-height: 380px;
+    background-color: #ffffff;
+    padding: 5% 0;
+    display: flex;
+    justify-content: space-between;
+
+
+    a {
+        display: block;
+        width: 23%;
+        text-decoration: none;
+        text-align: center;
+        position: relative;
+        outline: none;
+
+        svg {
+            fill: #555555;
+
+        }
+
+        h3 {
+            font-family: Raleway;
+            color: #555555;
+            font-size: 22px;
+            font-weight: 600;
+            text-align: center;
+            margin: 3rem auto;
+        }
+
+        p {
+            font-family: Montserrat;
+            color: #8c8c8c;
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 24px;
+            text-align: center;
+        }
+
+        &::after {
+            content: " ";
+            display: block;
+            width: 70px;
+            height: 3px;
+            background-color: #f1eee9;
+            position: absolute;
+            bottom: -40px;
+            left: 37%;
+
+        }
+
+        &:hover {
+            svg {
+                fill: $serviceHover;
+            }
+
+            h3 {
+                color: $serviceHover;
+            }
+
+            &::after {
+                background-color: $serviceHover;
+            }
+        }
+    }
+}

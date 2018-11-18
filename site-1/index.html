@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Зачетный макет</title>
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/link-search.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <!--HEADER*/-->
+        <header>
+            <a href="#" class="header-logo">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64px" height="56px" viewBox="0 0 64 56">
+
+                    <path d="M 52.87 55.13C 52.87 55.13 58.13 45.94 58.13 45.94 58.13 45.94 63.38 55.13 63.38 55.13 63.38 55.13 52.87 55.13 52.87 55.13ZM 46.3 45.17C 46.3 45.17 56.81 45.17 56.81 45.17 56.81 45.17 51.56 54.36 51.56 54.36 51.56 54.36 46.3 45.17 46.3 45.17ZM 51.56 34.45C 51.56 34.45 56.81 43.64 56.81 43.64 56.81 43.64 46.3 43.64 46.3 43.64 46.3 43.64 51.56 34.45 51.56 34.45ZM 39.74 33.69C 39.74 33.69 50.24 33.69 50.24 33.69 50.24 33.69 44.99 42.87 44.99 42.87 44.99 42.87 39.74 33.69 39.74 33.69ZM 44.99 22.97C 44.99 22.97 50.24 32.15 50.24 32.15 50.24 32.15 39.74 32.15 39.74 32.15 39.74 32.15 44.99 22.97 44.99 22.97ZM 33.17 22.2C 33.17 22.2 43.68 22.2 43.68 22.2 43.68 22.2 38.42 31.39 38.42 31.39 38.42 31.39 33.17 22.2 33.17 22.2ZM 38.42 11.48C 38.42 11.48 43.68 20.67 43.68 20.67 43.68 20.67 33.17 20.67 33.17 20.67 33.17 20.67 38.42 11.48 38.42 11.48ZM 26.6 10.71C 26.6 10.71 37.11 10.71 37.11 10.71 37.11 10.71 31.85 19.9 31.85 19.9 31.85 19.9 26.6 10.71 26.6 10.71ZM 31.85-0.01C 31.85-0.01 37.11 9.18 37.11 9.18 37.11 9.18 26.6 9.18 26.6 9.18 26.6 9.18 31.85-0.01 31.85-0.01ZM 20.03 20.67C 20.03 20.67 25.29 11.48 25.29 11.48 25.29 11.48 30.54 20.67 30.54 20.67 30.54 20.67 20.03 20.67 20.03 20.67ZM 13.46 32.15C 13.46 32.15 18.72 22.97 18.72 22.97 18.72 22.97 23.97 32.15 23.97 32.15 23.97 32.15 13.46 32.15 13.46 32.15ZM 6.9 43.64C 6.9 43.64 12.15 34.45 12.15 34.45 12.15 34.45 17.4 43.64 17.4 43.64 17.4 43.64 6.9 43.64 6.9 43.64ZM 0.33 55.13C 0.33 55.13 5.58 45.94 5.58 45.94 5.58 45.94 10.84 55.13 10.84 55.13 10.84 55.13 0.33 55.13 0.33 55.13ZM 17.4 45.17C 17.4 45.17 12.15 54.36 12.15 54.36 12.15 54.36 6.9 45.17 6.9 45.17 6.9 45.17 17.4 45.17 17.4 45.17ZM 23.97 33.69C 23.97 33.69 18.72 42.87 18.72 42.87 18.72 42.87 13.46 33.69 13.46 33.69 13.46 33.69 23.97 33.69 23.97 33.69ZM 30.54 22.2C 30.54 22.2 25.29 31.39 25.29 31.39 25.29 31.39 20.03 22.2 20.03 22.2 20.03 22.2 30.54 22.2 30.54 22.2ZM 37.11 55.13C 37.11 55.13 26.6 55.13 26.6 55.13 26.6 55.13 31.85 45.94 31.85 45.94 31.85 45.94 37.11 55.13 37.11 55.13ZM 43.68 45.17C 43.68 45.17 38.42 54.36 38.42 54.36 38.42 54.36 33.17 45.17 33.17 45.17 33.17 45.17 43.68 45.17 43.68 45.17ZM 50.24 55.13C 50.24 55.13 39.74 55.13 39.74 55.13 39.74 55.13 44.99 45.94 44.99 45.94 44.99 45.94 50.24 55.13 50.24 55.13Z" />
+                </svg><span>Waxom</span>
+            </a>
+
+            <nav class="menu">
+                <input type="checkbox" id="checkbox" class="menu_check-box">
+                <label for="checkbox" class="menu-btn">
+                    <div class="menu-icon"></div>
+                </label>
+                <ul class="menu-container">
+
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Adout As</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Shortcodes</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-icons-cart-search">
+
+                <button class="header-cart"></button>
+                <form action="#">
+                    <input id="search" class="header-search" type="search">
+                </form>
+            </div>
+            <div class="sliders">
+
+                <a href="#" class="left-arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40px" height="73px" viewBox="0 0 40 73">
+                        <path d="M 38.03 72.98C 38.03 72.98 0 36.5 0 36.5 0 36.5 38.03 0.02 38.03 0.02 38.03 0.02 40 2.02 40 2.02 40 2.02 4.07 36.5 4.07 36.5 4.07 36.5 40 70.98 40 70.98 40 70.98 38.03 72.98 38.03 72.98Z" />
+                    </svg>
+                </a>
+                <div id="first" class="header-slogan">
+                    <p class="header-slogan-txt1">Unique and Modern Design</p>
+                    <p class="header-slogan-txt2">Portfolio PSD Template</p>
+                    <p class="header-slogan-txt3">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p>
+
+                </div>
+                <div id="second" class="header-slogan">
+                    <p class="header-slogan-txt1">2</p>
+                    <p class="header-slogan-txt2">2</p>
+                    <p class="header-slogan-txt3">2</p>
+
+                </div>
+                <div id="third" class="header-slogan">
+                    <p class="header-slogan-txt1">3</p>
+                    <p class="header-slogan-txt2">3</p>
+                    <p class="header-slogan-txt3">3</p>
+
+                </div>
+                <a href="#" class="right-arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40px" height="73px" viewBox="0 0 40 73">
+                        <path d="M 1.97 72.98C 1.97 72.98 40 36.5 40 36.5 40 36.5 1.97 0.02 1.97 0.02 1.97 0.02 0 2.02 0 2.02 0 2.02 35.93 36.5 35.93 36.5 35.93 36.5 0 70.98 0 70.98 0 70.98 1.97 72.98 1.97 72.98Z" />
+                    </svg>
+                </a>
+            </div>
+            <button class="main-btn">get started</button>
+
+            <ul class="slides">
+                <li><a href="#first"></a></li>
+                <li><a href="#second"></a></li>
+                <li><a href="#third"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+            </ul>
+
+        </header>
+
+        <main>
+
+            <!--SERVICE-->
+            <section class="service">
+                <a href="#">
+                    <figure>
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="49px" height="49px" viewBox="0 0 49 49">
+                            <path d="M 47.67 19.72C 47.67 19.72 33.4 33.99 33.4 33.99 33.4 33.99 0.53 48.46 0.53 48.46 0.53 48.46 15.01 15.59 15.01 15.59 15.01 15.59 29.28 1.33 29.28 1.33 29.9 0.71 30.9 0.71 31.53 1.33 32.15 1.95 32.15 2.95 31.53 3.58 31.53 3.58 17.68 17.42 17.68 17.42 17.68 17.42 9.11 36.89 9.11 36.89 9.11 36.89 12.11 39.89 12.11 39.89 12.11 39.89 31.57 31.31 31.57 31.31 31.57 31.31 45.42 17.47 45.42 17.47 46.04 16.85 47.04 16.85 47.67 17.47 48.29 18.09 48.29 19.1 47.67 19.72ZM 29.75 28.47C 29.43 28.77 29.03 28.93 28.62 28.93 28.21 28.93 27.81 28.77 27.5 28.47 26.88 27.84 26.88 26.84 27.5 26.22 27.5 26.22 40.83 12.88 40.83 12.88 41.45 12.26 42.45 12.26 43.08 12.88 43.7 13.51 43.7 14.51 43.08 15.13 43.08 15.13 29.75 28.47 29.75 28.47ZM 26.26 24.99C 25.95 25.29 25.55 25.45 25.14 25.45 24.73 25.45 24.33 25.29 24.02 24.99 23.39 24.36 23.39 23.35 24.02 22.73 24.02 22.73 37.35 9.4 37.35 9.4 37.97 8.78 38.97 8.78 39.6 9.4 40.22 10.02 40.22 11.03 39.6 11.65 39.6 11.65 26.26 24.99 26.26 24.99ZM 22.78 21.5C 22.47 21.81 22.07 21.97 21.66 21.97 21.25 21.97 20.84 21.81 20.53 21.5 19.91 20.88 19.91 19.87 20.53 19.25 20.53 19.25 33.87 5.92 33.87 5.92 34.49 5.3 35.5 5.3 36.12 5.92 36.74 6.54 36.74 7.55 36.12 8.17 36.12 8.17 22.78 21.5 22.78 21.5Z" /></svg>
+                        <figcaption>
+                            <h3>Web &amp; App Design</h3>
+                            <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.</p>
+                        </figcaption>
+                    </figure>
+                </a>
+                <a href="#">
+                    <figure>
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="44px" height="40px" viewBox="0 0 44 40">
+                            <path d="M 0.41 19.7C 0.41 19.7 4.4 17.55 4.4 17.55 4.4 17.55 21.85 26.96 21.85 26.96 21.85 26.96 39.3 17.55 39.3 17.55 39.3 17.55 43.29 19.7 43.29 19.7 43.29 19.7 21.85 31.25 21.85 31.25 21.85 31.25 0.41 19.7 0.41 19.7ZM 0.41 11.67C 0.41 11.67 21.85 0.11 21.85 0.11 21.85 0.11 43.29 11.67 43.29 11.67 43.29 11.67 21.85 23.23 21.85 23.23 21.85 23.23 0.41 11.67 0.41 11.67ZM 21.85 34.98C 21.85 34.98 39.3 25.57 39.3 25.57 39.3 25.57 43.29 27.72 43.29 27.72 43.29 27.72 21.85 39.28 21.85 39.28 21.85 39.28 0.41 27.72 0.41 27.72 0.41 27.72 4.4 25.57 4.4 25.57 4.4 25.57 21.85 34.98 21.85 34.98Z" /></svg>
+                        <figcaption>
+                            <h3>Development</h3>
+                            <p>Lorem ipsum dolor sit amet, adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p>
+                        </figcaption>
+                    </figure>
+                </a>
+                <a href="#">
+                    <figure>
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="44px" height="44px" viewBox="0 0 44 44">
+                            <path d="M 43.93 21.85C 43.93 20.23 42.76 18.5 41.32 17.99 39.88 17.48 38.49 16.24 38.08 15.25 37.68 14.27 37.78 12.4 38.44 11.02 39.09 9.64 38.69 7.59 37.55 6.44 36.4 5.3 34.36 4.9 32.98 5.56 31.6 6.21 29.73 6.32 28.75 5.91 27.76 5.51 26.52 4.11 26.01 2.67 25.49 1.23 23.76 0.07 22.14 0.07 20.52 0.07 18.79 1.23 18.28 2.67 17.77 4.11 16.52 5.51 15.54 5.91 14.56 6.32 12.69 6.21 11.31 5.56 9.93 4.9 7.88 5.3 6.74 6.44 5.59 7.59 5.19 9.64 5.85 11.02 6.51 12.4 6.61 14.27 6.2 15.25 5.8 16.23 4.41 17.48 2.97 17.99 1.53 18.5 0.36 20.23 0.36 21.85 0.36 23.47 1.53 25.2 2.97 25.71 4.41 26.22 5.8 27.47 6.21 28.45 6.61 29.43 6.51 31.3 5.85 32.68 5.19 34.06 5.59 36.11 6.74 37.26 7.88 38.4 9.93 38.8 11.31 38.14 12.69 37.49 14.56 37.38 15.54 37.79 16.52 38.2 17.77 39.59 18.28 41.03 18.79 42.47 20.52 43.63 22.14 43.63 23.76 43.63 25.49 42.47 26.01 41.03 26.52 39.59 27.76 38.2 28.74 37.79 29.73 37.38 31.6 37.49 32.98 38.14 34.36 38.8 36.4 38.4 37.55 37.26 38.69 36.11 39.09 34.06 38.44 32.68 37.78 31.3 37.67 29.43 38.08 28.45 38.48 27.47 39.88 26.22 41.32 25.71 42.76 25.2 43.93 23.47 43.93 21.85ZM 22.14 29.84C 17.72 29.84 14.15 26.27 14.15 21.86 14.15 17.44 17.72 13.87 22.14 13.87 26.55 13.87 30.13 17.44 30.13 21.86 30.13 26.27 26.55 29.84 22.14 29.84Z" /></svg>
+                        <figcaption>
+                            <h3>Customization</h3>
+                            <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.</p>
+                        </figcaption>
+                    </figure>
+                </a>
+                <a href="#">
+                    <figure>
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="52px" height="36px" viewBox="0 0 52 36">
+                            <path d="M 51.41 14.34C 51.41 14.34 41.92 33.76 41.92 33.76 41.33 34.98 39.73 35.98 38.38 35.98 38.38 35.98 3.08 35.98 3.08 35.98 1.73 35.98 1.11 34.98 1.71 33.76 1.71 33.76 11.2 14.34 11.2 14.34 11.8 13.12 13.39 12.12 14.74 12.12 14.74 12.12 50.04 12.12 50.04 12.12 51.39 12.12 52.01 13.12 51.41 14.34ZM 9 13.25C 9 13.25 0.74 30.15 0.74 30.15 0.74 30.15 0.74 7.98 0.74 7.98 0.74 6.62 1.84 5.5 3.2 5.5 3.2 5.5 14.01 5.5 14.01 5.5 14.01 5.5 14.01 4.06 14.01 4.06 14.01 3.06 14.39 2.13 15.09 1.43 15.79 0.72 16.72 0.33 17.7 0.33 17.7 0.33 23.99 0.33 23.99 0.33 26.02 0.33 27.67 2 27.67 4.06 27.67 4.06 27.67 5.5 27.67 5.5 27.67 5.5 38.49 5.5 38.49 5.5 39.84 5.5 40.95 6.62 40.95 7.98 40.95 7.98 40.95 9.64 40.95 9.64 40.95 9.64 14.74 9.64 14.74 9.64 12.47 9.64 10 11.19 9 13.25ZM 16.47 5.5C 16.47 5.5 25.22 5.5 25.22 5.5 25.22 5.5 25.22 4.06 25.22 4.06 25.22 3.37 24.67 2.82 23.99 2.82 23.99 2.82 17.7 2.82 17.7 2.82 17.37 2.82 17.06 2.94 16.83 3.18 16.6 3.42 16.47 3.73 16.47 4.06 16.47 4.06 16.47 5.5 16.47 5.5Z" /></svg>
+                        <figcaption>
+                            <h3>Marketing</h3>
+                            <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.</p>
+                        </figcaption>
+                    </figure>
+                </a>
+            </section>
+
+            <!--WAXOM IDEAS -->
+            <section class="waxom">
+                <h2>Waxom is Realization of your Ideas.</h2>
+                <p>Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
+                <div class="waxom-browsers">
+                    <div class="waxom-browsers-center"></div>
+                    <div class="waxom-browsers-right"></div>
+                    <div class="waxom-browsers-left"></div>
+                </div>
+            </section>
+
+            <!--TEXT-BOXES WAXOM-->
+            <aside class="text-boxes">
+                <div class="text-boxes-content">
+                    <p class="text-boxes-content-txt1"><span>Waxom</span> Multipurpose WordPress Theme</p>
+                    <p class="text-boxes-content-txt2">Don't Forget to Rate the Template. Thanks so much!</p>
+                </div>
+                <a href="#" class="text-boxes-btn"><span>Purshase now</span> </a>
+            </aside>
+
+            <!--LATEST PROJECT-->
+            <section class="latest-project">
+                <h2>Our Latest Projects.</h2>
+                <p>Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
+                <ul>
+                    <li>All</li>
+                    <li>Web Design</li>
+                    <li>Mobile App</li>
+                    <li>Illustration</li>
+                    <li>Photography</li>
+                </ul>
+                <div class="latest-project-item">
+                    <!--лишние обертки top и bottom для выравнивания по вертикали!-->
+                    <div class="latest-project-item-top">
+
+                        <article>
+                            <img src="img/latest-item-1.jpg" alt="img" width="370" height="237">
+                            <div class="item-text">
+                                <h3>Claritas Etiam Processus</h3>
+                                <p>Photography, Nature</p>
+                            </div>
+
+                            <button class="hover-1"><i class="icon-link"></i></button>
+                            <button class="hover-2"><i class="icon-search"></i></button>
+                        </article>
+
+                        <article>
+                            <img src="img/latest-item-2.jpg" alt="img" width="370" height="237">
+                            <div class="item-text">
+                                <h3>Quam Nutamus Farum</h3>
+                                <p>Graphic Design, Mock-Up</p>
+                            </div>
+
+                            <button class="hover-1"><i class="icon-link"></i></button>
+                            <button class="hover-2"><i class="icon-search"></i></button>
+                        </article>
+
+                        <article>
+                            <img src="img/latest-item-3.jpg" alt="img" width="370" height="237">
+                            <div class="item-text">
+                                <h3>Usus Legentis Videntur</h3>
+                                <p>Photography, Holiday</p>
+                            </div>
+
+                            <button class="hover-1"><i class="icon-link"></i></button>
+                            <button class="hover-2"><i class="icon-search"></i></button>
+                        </article>
+                    </div>
+                    <div class="latest-project-item-bottom">
+
+                        <article>
+                            <img src="img/latest-item-4.jpg" alt="img" width="370" height="237">
+                            <div class="item-text">
+                                <h3>Claritas Etiam Processus</h3>
+                                <p>Photography, Nature</p>
+                            </div>
+
+                            <button class="hover-1"><i class="icon-link"></i></button>
+                            <button class="hover-2"><i class="icon-search"></i></button>
+                        </article>
+
+                        <article>
+                            <img src="img/latest-item-5.jpg" alt="img" width="370" height="237">
+                            <div class="item-text">
+                                <h3>Quam Nutamus Farum</h3>
+                                <p>Graphic Design, Mock-Up</p>
+                            </div>
+
+                            <button class="hover-1"><i class="icon-link"></i></button>
+                            <button class="hover-2"><i class="icon-search"></i></button>
+                        </article>
+
+                        <article>
+                            <img src="img/latest-item-6.jpg" alt="img" width="370" height="237">
+                            <div class="item-text">
+                                <h3>Usus Legentis Videntur</h3>
+                                <p>Photography, Holiday</p>
+                            </div>
+
+                            <button class="hover-1"><i class="icon-link"></i></button>
+                            <button class="hover-2"><i class="icon-search"></i></button>
+                        </article>
+                    </div>
+                </div>
+                <a class="latest-project-btn" href="#"><span>Load More</span> </a>
+            </section>
+
+            <!--VIDEO PRESENTATION-->
+            <article class="video-presentation">
+                <video id="video" class="play-video" width="1920" height="705" poster="img/video-poster.jpg">
+                    <source src="https://staging.coverr.co/s3/mp4/New-jumbo.mp4" type="video/mp4">
+                    <source src="https://staging.coverr.co/s3/webm/New-jumbo.webm" type="video/ogg">
+
+                </video>
+                <div class="video-presentation-txt">
+                    <button id="button" class="video-play-btn">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="70px" height="70px" viewBox="0 0 70 70">
+
+                            <path d="M 31.25 18.65C 31.25 18.65 48.97 33.42 48.97 33.42 49.44 33.81 49.71 34.39 49.71 35 49.71 35.61 49.44 36.19 48.97 36.58 48.97 36.58 31.25 51.34 31.25 51.34 30.88 51.66 30.41 51.82 29.93 51.82 29.64 51.82 29.34 51.76 29.06 51.63 28.34 51.29 27.87 50.56 27.87 49.76 27.87 49.76 27.87 20.24 27.87 20.24 27.87 19.44 28.34 18.71 29.06 18.37 29.78 18.03 30.64 18.14 31.25 18.65ZM 31.99 45.36C 31.99 45.36 44.43 35 44.43 35 44.43 35 31.99 24.63 31.99 24.63 31.99 24.63 31.99 45.36 31.99 45.36ZM 59.76 59.76C 53.03 66.48 44.03 70 34.94 70 29.07 70 23.17 68.54 17.83 65.53 16.84 64.97 16.49 63.71 17.05 62.72 17.6 61.73 18.86 61.38 19.85 61.94 31.87 68.7 47.08 66.61 56.85 56.85 68.89 44.8 68.89 25.2 56.85 13.15 44.8 1.1 25.2 1.1 13.15 13.15 1.1 25.2 1.1 44.8 13.15 56.85 13.95 57.65 13.95 58.95 13.15 59.76 12.35 60.56 11.04 60.56 10.24 59.76-3.42 46.1-3.42 23.89 10.24 10.24 23.89-3.42 46.1-3.42 59.76 10.24 73.41 23.89 73.41 46.1 59.76 59.76Z" />
+                        </svg>
+
+                    </button>
+
+
+                    <h3>Waxom Video Presentation</h3>
+                    <p class="text">Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius, qui sequitur mutationem consuetudium.</p>
+                    <time> 03:26</time>
+                </div>
+
+
+            </article>
+
+            <!--EXELENT FOR MOBILE DEVICES-->
+            <section class="mobile-devices">
+                <!--картинка фоном я так понимаю-->
+                <h2>Excellent for Mobile Devices.</h2>
+                <p>Qisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius claritas. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
+                <details>
+                    <summary>
+                        Nam liber tempor cum soluta nobis eleifend option;
+                    </summary>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum consequuntur quae commodi quo quos maxime enim ex quia voluptatum, beatae quaerat perferendis numquam, adipisci quasi illo vero nam, cumque illum!
+                </details>
+                <details>
+                    <summary>
+                        Option congue nihil imperdiet doming id quod mazim placerat facer;</summary>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum consequuntur quae commodi quo quos maxime enim ex quia voluptatum, beatae quaerat perferendis numquam, adipisci quasi illo vero nam, cumque illum!
+                </details>
+                <details>
+                    <summary>
+                        Eodem modo typi, qui nunc nobis videntur parum futurum;
+                    </summary>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum consequuntur quae commodi quo quos maxime enim ex quia voluptatum, beatae quaerat perferendis numquam, adipisci quasi illo vero nam, cumque illum!
+                </details>
+                <details>
+                    <summary>
+                        Investigationes demonstraverunt lectores
+                    </summary>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum consequuntur quae commodi quo quos maxime enim ex quia voluptatum, beatae quaerat perferendis numquam, adipisci quasi illo vero nam, cumque illum!
+                </details>
+            </section>
+
+            <!--COUNTERS-->
+            <section class="counters">
+                <!--не уверен, что это секция-->
+                <div class="counters-item client-icon">
+                    <span class="counters-item-count">3587</span>
+                    <span class="counters-item-text">Satisfied Clients</span>
+                </div>
+                <div class="counters-item coffee-icon">
+                    <span class="counters-item-count">207</span>
+                    <span class="counters-item-text">Cups of coffee</span>
+                </div>
+                <div class="counters-item blog-icon">
+                    <span class="counters-item-count">2500</span>
+                    <span class="counters-item-text">Blog posts</span>
+                </div>
+                <div class="counters-item likes-icon">
+                    <span class="counters-item-count">873</span>
+                    <span class="counters-item-text">Blog posts</span>
+                </div>
+                <div class="counters-item launched-icon">
+                    <span class="counters-item-count">900</span>
+                    <span class="counters-item-text">We launched</span>
+                </div>
+            </section>
+
+            <!--RECENT POSTS-->
+            <section class="recent-post">
+                <h2>Recent Posts</h2>
+                <p class="recent-post-text">Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
+                <div class="recent-post-item">
+
+                    <article class="recent-post-item-post">
+                        <img src="img/post-1.jpg" alt="img" width="370" height="220">
+                        <h3>Lorem ipsum dolor sit amet</h3>
+                        <p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
+                        <a href="#"><span>Read more</span></a>
+                        <div class="date">
+                            <span class="date-number">30</span>
+                            <span class="date-month">Sep.</span>
+                        </div>
+                    </article>
+                    <article class="recent-post-item-post">
+                        <img src="img/post-2.jpg" alt="img" width="370" height="220">
+                        <h3>Lorem ipsum dolor sit amet</h3>
+                        <p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
+                        <a href="#"><span>Read more</span></a>
+                        <div class="date">
+                            <span class="date-number">30</span>
+                            <span class="date-month">Sep.</span>
+                        </div>
+                    </article>
+                    <article class="recent-post-item-post">
+                        <img src="img/post-3.jpg" alt="img" width="370" height="220">
+                        <h3>Lorem ipsum dolor sit amet</h3>
+                        <p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
+                        <a href="#"><span>Read more</span></a>
+                        <div class="date">
+                            <span class="date-number">30</span>
+                            <span class="date-month">sep.</span>
+                        </div>
+                    </article>
+                </div>
+                <div class="recent-post-arrows">
+                    <button class="small-left-arrow"></button>
+                    <button class="small-right-arrow"></button>
+                </div>
+            </section>
+
+            <!--PARTNERS-->
+            <section class="partners">
+                <a href="#" target="_blank"><img src="img/logo-01.png" alt="logo" width="210" height="210"></a>
+                <a href="#" target="_blank"><img src="img/logo-02.png" alt="logo" width="210" height="210"></a>
+                <a href="#" target="_blank"><img src="img/logo-03.png" alt="logo" width="210" height="210"></a>
+                <a href="#" target="_blank"><img src="img/logo-04.png" alt="logo" width="210" height="210"></a>
+
+            </section>
+        </main>
+
+        <!--FOOTER-->
+        <footer>
+            <div class="footer-content">
+                <article class="footer-content-waxom">
+                    <a href="#" class="footer-logo">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64px" height="56px" viewBox="0 0 64 56">
+
+                            <path d="M 52.87 55.13C 52.87 55.13 58.13 45.94 58.13 45.94 58.13 45.94 63.38 55.13 63.38 55.13 63.38 55.13 52.87 55.13 52.87 55.13ZM 46.3 45.17C 46.3 45.17 56.81 45.17 56.81 45.17 56.81 45.17 51.56 54.36 51.56 54.36 51.56 54.36 46.3 45.17 46.3 45.17ZM 51.56 34.45C 51.56 34.45 56.81 43.64 56.81 43.64 56.81 43.64 46.3 43.64 46.3 43.64 46.3 43.64 51.56 34.45 51.56 34.45ZM 39.74 33.69C 39.74 33.69 50.24 33.69 50.24 33.69 50.24 33.69 44.99 42.87 44.99 42.87 44.99 42.87 39.74 33.69 39.74 33.69ZM 44.99 22.97C 44.99 22.97 50.24 32.15 50.24 32.15 50.24 32.15 39.74 32.15 39.74 32.15 39.74 32.15 44.99 22.97 44.99 22.97ZM 33.17 22.2C 33.17 22.2 43.68 22.2 43.68 22.2 43.68 22.2 38.42 31.39 38.42 31.39 38.42 31.39 33.17 22.2 33.17 22.2ZM 38.42 11.48C 38.42 11.48 43.68 20.67 43.68 20.67 43.68 20.67 33.17 20.67 33.17 20.67 33.17 20.67 38.42 11.48 38.42 11.48ZM 26.6 10.71C 26.6 10.71 37.11 10.71 37.11 10.71 37.11 10.71 31.85 19.9 31.85 19.9 31.85 19.9 26.6 10.71 26.6 10.71ZM 31.85-0.01C 31.85-0.01 37.11 9.18 37.11 9.18 37.11 9.18 26.6 9.18 26.6 9.18 26.6 9.18 31.85-0.01 31.85-0.01ZM 20.03 20.67C 20.03 20.67 25.29 11.48 25.29 11.48 25.29 11.48 30.54 20.67 30.54 20.67 30.54 20.67 20.03 20.67 20.03 20.67ZM 13.46 32.15C 13.46 32.15 18.72 22.97 18.72 22.97 18.72 22.97 23.97 32.15 23.97 32.15 23.97 32.15 13.46 32.15 13.46 32.15ZM 6.9 43.64C 6.9 43.64 12.15 34.45 12.15 34.45 12.15 34.45 17.4 43.64 17.4 43.64 17.4 43.64 6.9 43.64 6.9 43.64ZM 0.33 55.13C 0.33 55.13 5.58 45.94 5.58 45.94 5.58 45.94 10.84 55.13 10.84 55.13 10.84 55.13 0.33 55.13 0.33 55.13ZM 17.4 45.17C 17.4 45.17 12.15 54.36 12.15 54.36 12.15 54.36 6.9 45.17 6.9 45.17 6.9 45.17 17.4 45.17 17.4 45.17ZM 23.97 33.69C 23.97 33.69 18.72 42.87 18.72 42.87 18.72 42.87 13.46 33.69 13.46 33.69 13.46 33.69 23.97 33.69 23.97 33.69ZM 30.54 22.2C 30.54 22.2 25.29 31.39 25.29 31.39 25.29 31.39 20.03 22.2 20.03 22.2 20.03 22.2 30.54 22.2 30.54 22.2ZM 37.11 55.13C 37.11 55.13 26.6 55.13 26.6 55.13 26.6 55.13 31.85 45.94 31.85 45.94 31.85 45.94 37.11 55.13 37.11 55.13ZM 43.68 45.17C 43.68 45.17 38.42 54.36 38.42 54.36 38.42 54.36 33.17 45.17 33.17 45.17 33.17 45.17 43.68 45.17 43.68 45.17ZM 50.24 55.13C 50.24 55.13 39.74 55.13 39.74 55.13 39.74 55.13 44.99 45.94 44.99 45.94 44.99 45.94 50.24 55.13 50.24 55.13Z" />
+                        </svg><span>Waxom</span>
+                    </a>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci suscipit lobortis claritatem.</p>
+                    <a class="read" href="#"><span>Read more</span></a>
+                </article>
+                <div class="footer-content-recent-post">
+
+                    <h3>Recent Posts</h3>
+                    <div class="post">
+                        <span class="date"> September 08, 2015</span>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
+                    </div>
+                    <div class="post">
+                        <span class="date"> September 08, 2015</span>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
+                    </div>
+                    <div class="post">
+                        <span class="date"> September 08, 2015</span>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
+                    </div>
+
+                </div>
+                <div class="footer-content-twitter">
+                    <h3>Our Twitter</h3>
+                    <div class="post">
+                        <p><span>&#64;waxom</span> Cum soluta nobis eleifend option congue nihil imperdiet doming</p>
+                        <span class="time">3 min ago</span>
+                    </div>
+                    <div class="post">
+                        <p>Mirum est <span>#envato</span> notare quam littera gothica, quam nunc putamus parum anteposuerit litterarum</p>
+                        <span class="time"> 5 hours ago</span>
+                    </div>
+                    <div class="post">
+                        <p>Soluta nobis option bit.ly/1Hniso7</p>
+                        <span class="time"> 20 days ago</span>
+                    </div>
+                </div>
+                <div class="footer-content-widget">
+                    <h3>Dribbble Widget</h3>
+
+                    <div class="widgets">
+                        <img src="img/widget-1.jpg" alt="widget" width="130" height="98">
+                        <img src="img/widget-2.jpg" alt="widget" width="130" height="98">
+                        <img src="img/widget-3.jpg" alt="widget" width="130" height="98">
+                        <img src="img/widget-4.jpg" alt="widget" width="130" height="98">
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <div class="footer-copyright-left">
+                    <p>Copyright &copy; 2015 <span>Waxom</span> </p>
+                    <a href="#"><span>Private Policy</span></a>
+                    <a class="uppercase" href="#"><span>faq</span></a>
+                    <a href="#"><span>Support</span></a>
+                </div>
+                <div class="footer-copyright-right">
+                    <p>Designed by <span>ThemeFire</span></p>
+                    <p>Only on <span>Envato Market</span></p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="js/video-play.js"></script>
+</body>
+
+</html>

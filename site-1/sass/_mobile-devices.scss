@@ -1,0 +1,82 @@
+.mobile-devices {
+    width: 100%;
+    min-height: 695px;
+    padding: 10% 20%;
+    background: #fbfaf8 url(../img/phone.png) no-repeat 30% 100%;
+  
+    display: flex;
+    flex-direction: column;
+   
+
+    h2 {
+        min-width: 200px;
+        font-family: Raleway;
+        color: #555555;
+        font-size: 30px;
+        font-weight: 600;
+        text-align: center;
+        margin-left: 50%;
+        margin-bottom: 3rem;
+       
+    }
+
+    p {
+        font-family: Montserrat;
+        width: 60%;
+        min-width: 200px;
+        margin-left: 50%;
+        color: #8c8c8c;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 28px;
+        text-align: left;
+        margin-bottom: 3rem;
+    }
+
+    details {
+        width: 60%;
+     
+        margin-left: 50%;
+        font-family: Montserrat;
+        color: #8c8c8c;
+        font-size: 16px;
+        font-weight: 300;
+        text-align: left;
+
+        summary::-webkit-details-marker {
+            display: none;
+        }
+
+        summary {
+            display: block;
+
+            font-family: Montserrat;
+            color: #8c8c8c;
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 32px;
+            text-align: left;
+            outline: none;
+            position: relative;
+        }
+
+        summary::before {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            left: -45px;
+            top: 5px;
+            width: 21px;
+            height: 21px;
+            border-radius: 50%;
+            background-color: $serviceHover;
+            content: '\02C3';
+            color: $colorTextWhite;
+            font-size: 17px;
+        }
+    }
+    details[open] summary::before{
+         content: '\02C5';
+    }
+}

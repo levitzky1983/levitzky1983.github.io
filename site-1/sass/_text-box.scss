@@ -1,0 +1,81 @@
+.text-boxes {
+    width: 100%;
+    min-height: 150px;
+    background: -webkit-linear-gradient(0deg, #211b19 0%, #4e3427 100%);
+    background: -moz-linear-gradient(0deg, #211b19 0%, #4e3427 100%);
+    background: -o-linear-gradient(0deg, #211b19 0%, #4e3427 100%);
+    background: -ms-linear-gradient(0deg, #211b19 0%, #4e3427 100%);
+    background: linear-gradient(90deg, #211b19 0%, #4e3427 100%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    &-content-txt1 {
+        span {
+            font-family: Raleway;
+            color: #c7b299;
+            font-size: 28px;
+            font-weight: 400;
+            text-align: left;
+        }
+
+        font-family: Raleway;
+        color: #ffffff;
+        font-size: 28px;
+        font-weight: 400;
+        text-align: left;
+    }
+
+    &-content-txt2 {
+        font-family: Montserrat;
+        color: #615855;
+        font-size: 18px;
+        font-weight: 300;
+        text-align: left;
+    }
+
+    &-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 3px;
+        background-color: #998675;
+        width: 170px;
+        height: 50px;
+        text-decoration: none;
+        -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.69);
+        -moz-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.69);
+        box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.69);
+        -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.69);
+        -moz-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.69);
+        box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.69);
+
+        span {
+            font-family: Raleway;
+            color: #ffffff;
+            font-size: 14px;
+            font-weight: 700;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        &:hover span {
+            color: black;
+
+        }
+
+        &:active {
+            -webkit-box-shadow: none;
+            -moz-box-shadow: none;
+            box-shadow: none;
+            -webkit-box-shadow: none;
+            -moz-box-shadow: none;
+            box-shadow: none;
+
+            span {
+                color: red;
+            }
+        }
+    }
+
+}
