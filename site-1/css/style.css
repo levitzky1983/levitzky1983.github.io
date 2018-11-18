@@ -832,7 +832,7 @@ header .slides a:hover {
   width: 100%;
   min-height: 695px;
   padding: 10% 20%;
-  background: #fbfaf8 url(../img/phone.png) no-repeat 30% 100%;
+  background: #fbfaf8 url("../img/phone.png") no-repeat 30% 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
